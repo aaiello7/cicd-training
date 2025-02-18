@@ -1,0 +1,15 @@
+{
+  "name": "angular-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ng serve"
+  },
+  "dependencies": {
+    "@angular/cli": "^12.0.0",
+    "@angular/core": "^12.0.0",
+    "@angular/common": "^12.0.0",
+    "@angular/compiler": "^12.0.0",
+    "@angular/platform-browser": "^12.0.0",
+    "@angular/platform-browser-dynamic": "^12.0.0"
+  }
+}
