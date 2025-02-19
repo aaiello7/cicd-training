@@ -1,6 +1,5 @@
 # cicd-training
 A repository for the CI/CD course
-mauricio aguilar
 
 Prueba
 Jonatan's change v1
@@ -13,3 +12,5 @@ testing, commit 2
 
 testing, commit 3
 
+Andres Aiello
+Lo hice en mi branch
