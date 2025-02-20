@@ -1,0 +1,17 @@
+name: Continuos Integration with GitHub actions
+
+on:
+  push:
+    branches:
+      [zamora}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+    uses: actions/checkout@V4
+
+    - name: Runner notification
+    run: echo "Deploy to Prod done"
