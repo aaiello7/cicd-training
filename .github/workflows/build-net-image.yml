@@ -1,0 +1,35 @@
+name: .NET CI
+
+on:
+  push:
+    branches:
+      - jonatansegura
+    paths:
+      - 'dotnet-demo/**'
+  pull_request:
+    branches:
+      - jonatansegura
+    paths:
+      - 'dotnet-demo/**'
+
+jobs:
+    build-and-test:
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v3
+
+        - name: Setup .NET Core
+          uses: actions/setup-dotnet@v3
+          with:
+            dotnet-version: 5.0.x
+
+        - name: Install dependencies
+          run: dotnet restore dotnet-demo
+
+        - name: Build
+          run: dotnet build dotnet-demo
+
+        - name: Test
+          run: dotnet test --no-build --verbosity normal --configuration Release
+          working-directory: dotnet-demo
