@@ -1,9 +1,10 @@
+
 name: Zamora-Workflow
 
 on:
   push:
     branches:
-      - MauricioAguilar
+      zamora
 
 jobs:
   deploy:

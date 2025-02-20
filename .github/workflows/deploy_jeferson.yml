@@ -1,0 +1,16 @@
+name: Deploy Jeferson
+
+on:
+  push:
+    branches: jeferson-gutierrez
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+
+      - name: Runner Notifier
+        run: echo "Deploying Jeferson's branch"
