@@ -1,19 +1,17 @@
-name: Build image to Development
+name: Build Image for Testing
 
 on:
   push:
     branches:
-      - jonatanseguracastro
+      - jonatansegura
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
 
     steps:
-        - name: Checkout code
-          uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-        - name: Notificacion Runner
-          run: echo "Build Image for Development"
-
-
+      - name: Runner Notification 
+        run: echo "Build Image for testing"
