@@ -8,10 +8,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: checkout code
-      uses: actions/checkout@v2
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
 
-    - name: Runner Notifier
-      run: echo "Deploying Jeferson's branch"
-    
+      - name: Runner Notifier
+        run: echo "Deploying Jeferson's branch"
