@@ -3,7 +3,7 @@ name: Continuos Integration with GitHub actions
 on:
   push:
     branches:
-      [zamora}
+      zamora
 
 jobs:
   deploy:
