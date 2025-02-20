@@ -1,0 +1,17 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - CristopherMorales
+
+jobs:
+  deploy:
+    rund-on: ubuntu-latest
+
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v2 #do a code check out. 
+
+    - name: Runner Notification
+      run: echo "CMF: Deploy to Production"
