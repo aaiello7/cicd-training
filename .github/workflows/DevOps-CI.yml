@@ -3,15 +3,15 @@ name: Zamora-Workflow
 on:
   push:
     branches:
-      zamora
+      - MauricioAguilar
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-    uses: actions/checkout@V4
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Runner notification
-    run: echo "Deploy to Prod done"
+      - name: Runner Notification 
+        run: echo "Deploy to Production"
