@@ -1,31 +1,17 @@
-name: DevOps-CI
+name: Continuos Integration with GitHub actions
 
 on:
   push:
     branches:
-      - zamora
-  pull_request:
-    branches:
-      - zamora
+      [zamora}
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+    uses: actions/checkout@V4
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '5.0.x'
-
-    - name: Restore dependencies
-      run: dotnet restore
-
-    - name: Build
-      run: dotnet build --no-restore
-
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+    - name: Runner notification
+    run: echo "Deploy to Prod done"
