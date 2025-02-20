@@ -1,14 +1,9 @@
-
 name: Zamora-Workflow
 
 on:
   push:
     branches:
-<<<<<<< HEAD
       - zamora
-=======
-      zamora
->>>>>>> 2691eda419c9fa0cc6ba4fb130fd1c4dbade0c22
 
 jobs:
   deploy:
@@ -18,5 +13,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Runner Notification Zamora
+      - name: Runner Notification Zamora 2
         run: echo "Deploy to Production"
