@@ -7,11 +7,11 @@ on:
 
 jobs:
   deploy:
-    rund-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v2 #do a code check out. 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2 # Do a code checkout. 
 
-    - name: Runner Notification
-      run: echo "CMF: Deploy to Production"
+      - name: Runner Notification
+        run: echo "CMF: Deploy to Production"
