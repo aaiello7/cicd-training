@@ -1,7 +1,7 @@
 name: Deploy Arc Runners
 
 on:
-    pull-request:
+    push:
         branches:
         - master
 
