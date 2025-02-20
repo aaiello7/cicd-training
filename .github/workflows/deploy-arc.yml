@@ -1,0 +1,13 @@
+name: Deploy Arc Runners
+
+on:
+    push:
+        branches:
+        - master
+
+jobs: 
+    deploy-arc:
+        runs-on: ["innersource.prod.amr.dind"]
+        steps:
+          - name: hello-world
+            run: echo 'Hello, World!'
