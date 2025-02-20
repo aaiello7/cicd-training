@@ -1,0 +1,16 @@
+name: deploy to PROD
+on:
+  push:
+    branches:
+      - miguel
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Runner Notification
+        run: echo "Deploy to PROD"
